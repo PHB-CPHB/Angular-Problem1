@@ -1,0 +1,21 @@
+<div class="container">
+            <h2>Person Details</h2>
+            <table class="table">
+                <tr>
+                    <th>
+                        Firstname
+                    </th>
+                    <th>
+                        Lastname
+                    </th>
+                    <th>
+                        Id
+                    </th>
+                </tr>
+                <tr ng-repeat="person in personCtrl.persons | filter: {id : personCtrl.id.id}">
+                    <td>{{person.firstname}}</td>
+                    <td>{{person.lastname}}</td>
+                    <td>{{person.id}}</td>
+                </tr>
+            </table>
+        </div>

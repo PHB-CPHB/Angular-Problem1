@@ -1,0 +1,18 @@
+        <div class="container">
+            <h2>Create person</h2>
+            <table class="table">
+                <tr>
+                    <th>
+                        Firstname
+                    </th>
+                    <th>
+                        Lastname
+                    </th>
+                </tr>
+                <tr>
+                    <td><input ng-model="firstname" type="text" placeholder="Firstname"></td>
+                    <td><input ng-model="lastname" type="text" placeholder="Lastname"></td>
+                </tr>
+            </table>
+            <button ng-click="personCtrl.addPerson(firstname, lastname, id)">Add Person</button>
+        </div>
